@@ -1,0 +1,6 @@
+framework module SalesforceSwiftSDK {
+  umbrella header "SalesforceSwiftSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

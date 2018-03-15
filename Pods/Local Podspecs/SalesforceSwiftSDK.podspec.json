@@ -1,0 +1,38 @@
+{
+  "name": "SalesforceSwiftSDK",
+  "version": "6.0.0",
+  "summary": "Salesforce Mobile SDK for iOS - Swift",
+  "homepage": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS",
+  "license": {
+    "type": "Salesforce.com Mobile SDK License",
+    "file": "LICENSE.md"
+  },
+  "authors": {
+    "Raj Rao": "rao.r@salesforce.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source": {
+    "git": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS.git",
+    "tag": "v6.0.0",
+    "submodules": true
+  },
+  "requires_arc": true,
+  "default_subspecs": "SalesforceSwiftSDK",
+  "subspecs": [
+    {
+      "name": "SalesforceSwiftSDK",
+      "dependencies": {
+        "SmartSync": [
+
+        ],
+        "PromiseKit": [
+          "~> 5.0"
+        ]
+      },
+      "source_files": "libs/SalesforceSwiftSDK/SalesforceSwiftSDK/**/*.{h,m,swift}",
+      "requires_arc": true
+    }
+  ]
+}
